@@ -1,19 +1,28 @@
-/* Footer CSS */
-div .text{
-    background: #F3D0D2;
-    padding: 15px 0;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-  }
-  .text span{
-    font-size: 17px;
-    font-weight: 400;
-    color: black;
-  }
-  .text span a{
-    font-weight: 500;
-    color: black;
-  }
-  .text span a:hover{
-    text-decoration: underline;
-  }
+.footer {
+  background: #F3D0D2;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text span {
+  font-size: 17px;
+  font-weight: 400;
+  color: black;
+}
+
+.text span a {
+  font-weight: 500;
+  color: black;
+}
+
+.text span a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
