@@ -26,6 +26,7 @@ function Home() {
                 </div>
             </section>
             <section className = "iam">
+                <div className="iam-title">I am...</div>
 
             </section>
             <section className = "goal">

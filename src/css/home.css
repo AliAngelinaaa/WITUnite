@@ -1,5 +1,8 @@
+
 section{
     padding-top: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   section .content{
     width: 80%;
@@ -13,7 +16,7 @@ section{
   }
 
   .whoweare .whoweare-details .right{
-    width: 45%;
+    width: 40%;
   }
   .whoweare .right img{
     height: 400px;
@@ -37,10 +40,6 @@ section{
   
   /*Goal section*/
 
-  .goal{
-    padding-left: 10%;
-    padding-right: 10%;
-}
   div .Goal-title{
     font-size: 250%;
     text-align: center;
