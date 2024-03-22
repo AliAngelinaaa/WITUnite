@@ -1,0 +1,47 @@
+section{
+    padding-top: 40px;
+  }
+  section .content{
+    width: 80%;
+    margin: 40px auto;
+    font-family: 'Poppins', sans-serif;
+  }
+  .whoweare .whoweare-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .whoweare .whoweare-details .right{
+    width: 45%;
+  }
+  .whoweare .right img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .whoweare-details .left{
+    width: 55%;
+  }
+  section  .topic{
+    color: #0E2431;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .whoweare-details .left p{
+    text-align: justify;
+    color: #0E2431;
+  }
+  
+  /*Goal section*/
+
+  .goal{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+  div .Goal-title{
+    font-size: 250%;
+    text-align: center;
+  }
