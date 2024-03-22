@@ -1,6 +1,7 @@
 import React from 'react';
 import wit from '../images/wit.jpeg';
 import '../css/home.css';
+import Affirmation from '../components/affirmation';
 
 
 function Home() {
@@ -8,7 +9,7 @@ function Home() {
 
     return (
         <div>
-            <section>Affirmation</section>
+            <Affirmation />
             <section class="whoweare" id="whoweare">
                 <div class="content">
                     <div class="whoweare-details">
@@ -25,11 +26,17 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className = "iam">
-                <div className="iam-title">I am...</div>
-
+            <section class="iam">
+                <div class="iam-title">I am...</div>
+                <div class="circle-container">
+                    <div class="circle">Circle 1 Text</div>
+                    <div class="circle">Circle 2 Text</div>
+                    <div class="circle">Circle 3 Text</div>
+                </div>
             </section>
-            <section className = "goal">
+
+
+            <section className="goal">
                 <div className="Goal-title">Goal</div>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco

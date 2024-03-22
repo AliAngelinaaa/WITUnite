@@ -1,11 +1,10 @@
 
 section{
     padding-top: 40px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 10%;
   }
   section .content{
-    width: 80%;
+    width: 90%;
     margin: 40px auto;
     font-family: 'Poppins', sans-serif;
   }
@@ -37,7 +36,46 @@ section{
     text-align: justify;
     color: #0E2431;
   }
-  
+
+/* I am section */
+.iam {
+    background-color: #F3D0D2;
+    padding: 20px 0; /* Adjust padding as needed */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.iam-title {
+    font-size: 150%;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.circle-container {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    padding:0 10%; /* Adjust padding as needed */
+    width: 100%; /* Ensure full width */
+}
+
+.circle {
+    flex: 0 0 20%;
+    height: 15vw;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15vw; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+.circle p {
+    margin: 0;
+}
+
   /*Goal section*/
 
   div .Goal-title{

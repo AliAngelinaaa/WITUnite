@@ -1,0 +1,6 @@
+div .affirmation {
+    padding: 10%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust opacity as needed */
+    background-image: url('../images/bg.jpg');
+}
