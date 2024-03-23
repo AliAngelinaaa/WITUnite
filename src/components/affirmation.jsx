@@ -42,9 +42,13 @@ function Affirmation() {
 
     return (
         <div className="affirmation">
-            <h2>Affirmation</h2>
+        <div className="affirmation-text">
+        <div className="background-image"></div>
+            <h2>Daily Affirmation</h2>
             <p>{affirmations[currentAffirmationIndex]}</p>
         </div>
+        </div>
+
     );
 }
 

@@ -42,9 +42,9 @@ function Navigation() {
 
           <ul className="nav-links">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/students">Students</Link></li>
-            <li><Link to="/resources">Resources</Link></li>
-            <li><Link to="/about">About</Link></li>
+            <li><Link to="/about">Students</Link></li>
+            <li><Link to="/students">Resources</Link></li>
+            <li><Link to="/resources">Meet Our Community</Link></li>
           </ul>
         </div>
 

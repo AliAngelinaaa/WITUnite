@@ -1,6 +1,24 @@
 div .affirmation {
+    position: relative;
     padding: 10%;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.1); /* Adjust opacity as needed */
-    background-image: url('../images/bg.jpg');
+  /*  text-align: center; */
+   /* background-color: #F3D0D2 */
+   background-image: url('../images/banner6.png');  
+  /*background-image: url('../images/bg.jpg'); */
+  background-repeat: no-repeat; 
+  background-size: cover;
+
+
+}
+
+.affirmation-text {   
+    position: relative;
+    z-index: 1;
+    top: -60px;
+    text-align: right;
+    vertical-align: top;
+    color: rgb(0, 0, 0);
+    font-size: 24px; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
 }
