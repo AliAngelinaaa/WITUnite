@@ -5,8 +5,6 @@ import Affirmation from '../components/affirmation';
 
 
 function Home() {
-
-
     return (
         <div>
             <Affirmation />
@@ -16,9 +14,8 @@ function Home() {
                         <div class="left">
                             <div class="topic">Who We Are</div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, porro veritatis pariatur, nobis voluptatem ipsum repellat nemo quisquam error reprehenderit recusandae odio vel, suscipit. Voluptas mollitia accusantium quaerat aspernatur labore dolorum placeat ipsa sint nam perspiciatis eos consectetur veritatis debitis, quis aliquam unde sed maiores sit! Hic molestiae optio iste
-                                iure earum amet nostrum quaerat facere quae veniam maiores harum iusto aperiam vel inventore illo voluptatibus voluptates quo impedit voluptatum error vitae, omnis praesentium? Aperiam nulla non, nesciunt fuga rem perferendis alias et, temporibus, distinctio culpa unde a laborum libero ducimus. Facilis veniam sit praesentium, voluptatibus sint maxime iusto eaque.
-                            </p>
+                                We are a passionate group of women in tech at CUNY who believe in the power of community. We recognize the unique challenges women can face in this field, but we're here to change the narrative.<br/><br/>
+                                At Wit Unite, we're building a supportive network to empower women at CUNY to excel in tech. We share resources, collaborate on projects, and celebrate each other's achievements.                            </p>
                         </div>
                         <div class="right">
                             <img src={wit} alt="" />
@@ -27,24 +24,27 @@ function Home() {
                 </div>
             </section>
             <section class="iam">
-                <div class="iam-title">I am...</div>
+                <div class="iam-title">I am someone...</div>
                 <div class="circle-container">
-                    <div class="circle">Circle 1 Text</div>
-                    <div class="circle">Circle 2 Text</div>
+                    <div class="circle">who wants to be surrounded by like minded people</div>
+                    <div class="circle">who wants to give back to the community</div>
                     <div class="circle">Circle 3 Text</div>
                 </div>
             </section>
 
 
             <section className="goal">
-                <div className="Goal-title">Goal</div>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <div className="Goal-title">Goal: Empowering Women in Tech at CUNY</div>
+                <p> As part of our commitment to fostering diversity and inclusivity in the field of technology, our goals for women in tech at CUNY include:</p>
+                <ul>
+                    <li>Providing targeted support and resources for women pursuing careers in tech.</li>
+                    <li>Creating a supportive and inclusive environment where women feel empowered to excel in their tech studies and careers.</li>
+                    <li>Organizing workshops, seminars, and networking events specifically tailored to address the needs and challenges faced by women in the tech industry.</li>
+                    <li>Partnering with industry leaders to offer mentorship opportunities and internships for female students.</li>
+                    <li>Promoting female representation in leadership roles within the tech community at CUNY.</li>
+                </ul>
             </section>
-            <section>Meet Members</section>
+            {/* <section>Meet Members</section> */}
         </div>
     )
 }
