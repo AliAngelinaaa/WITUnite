@@ -45,7 +45,7 @@ section{
 }
 
 .iam-title {
-    font-size: 150%;
+    font-size: 250%;
     text-align: center;
     margin-bottom: 20px; /* Adjust margin as needed */
 }
@@ -63,9 +63,11 @@ section{
     background-color: #fff;
     border-radius: 50%;
     text-align: center;
-    line-height: 15vw; 
-    cursor: pointer;
     transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5%;
 }
 
 .circle:hover {
