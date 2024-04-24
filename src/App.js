@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Navigation />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='witunite/ ' element={<Home />} />
       </Routes>
       <Footer/>
     </Router>
