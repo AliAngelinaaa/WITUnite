@@ -6,10 +6,10 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/witunite">
       <Navigation />
       <Routes>
-        <Route path='witunite/ ' element={<Home />} />
+        <Route path='/' element={<Home />} />
       </Routes>
       <Footer/>
     </Router>

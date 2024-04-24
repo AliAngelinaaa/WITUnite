@@ -61,7 +61,7 @@ function Home() {
             </section>
 
 
-            <section>Meet Members</section>
+            {/* <section>Meet Members</section> */}
         </div>
     )
 }
