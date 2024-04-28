@@ -9,7 +9,8 @@ function Mtc() {
     return (
         <div>
             <h2>Our Mission</h2>
-            <p>We are people</p>
+                <p>We are people</p>
+                
             <h2>Board of Directors</h2>
             <div className="container">
                 <div className="card">

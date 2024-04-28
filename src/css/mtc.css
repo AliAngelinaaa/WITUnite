@@ -1,3 +1,9 @@
+/* Our Mission*/
+
+
+
+/* Our Board of Directors Section*/
+
 .container {
     display: flex;
     flex-direction: row;
@@ -23,7 +29,7 @@
 }
 
 .card:hover {
-    width: 90%;
+    width: 80%;
     margin-top: 10px;
 }
 
@@ -55,17 +61,17 @@ a:hover {
 }
 
 .HarmainImg {
-    width: 275px;
-    object-fit: cover;
-    object-position: 5% 0;
     transform: scale(1.5);
-    padding-right: 10%;
+    width: 300px;
+    object-fit: cover;
+    object-position: -5% 0;
+    padding-right: 50px;
 }
 
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .container {
         flex-direction: column;
         align-items: center;
@@ -86,7 +92,7 @@ a:hover {
     .circleBlock,
     .card div a,
     .card div p,
-    .card div h3 {
+    .card div h3, .card .HarmainImg {
         display: none;
     }
 
@@ -101,7 +107,7 @@ a:hover {
     .card:hover img,
     .card:hover div a,
     .card:hover div p,
-    .card:hover div h3 {
+    .card:hover div h3, .card:hover .HarmainImg {
         display: block;
     }
 
@@ -118,10 +124,12 @@ a:hover {
     }
 
     .HarmainImg {
-        /* height: 50%; */
-        justify-content: center;
-        object-fit: cover;
-        object-position: 5% 0;
+        width: 100%; /* Set the width of the image */
+        object-fit: cover; /* Cover the container while maintaining aspect ratio */
+        margin: 15% 0 125px 40%;
+        object-position: 15% 0; /* Adjust object position as needed */
+        transform: scale(2); /* Zoom the image by 1.5 times */
+        /* padding-bottom: 20%; Add padding on the right side */
     }
 
 }
