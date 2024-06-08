@@ -1,10 +1,49 @@
 /* Our Mission*/
+@keyframes zoomOut {
+    0% {
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
+.bento-box{
+    /* max-width: 90%; */
+    display: flex;
+    height: 400px;
+    border: 2px solid red;
+}
+.big-box {
+    width: 50%;
+    background-color: blue;
+    animation: zoomOut 1s cubic-bezier(1, 0.01, 0, 0.99); 
 
+}
+
+/* .big-box div{
+    animation: zoomOut 1s cubic-bezier(1, 0.01, 0, 0.99); 
+} */
+
+.smallBoxes{
+    border: 2px solid green;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.smallbox{
+    border: 2px solid red;
+    flex-basis: 66%;
+}
+.smallbox1{
+    flex: 1;
+}
+  
 
 /* Our Board of Directors Section*/
 
-.container {
+.cardContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -72,7 +111,7 @@ a:hover {
 
 
 @media (max-width: 600px) {
-    .container {
+    .cardContainer {
         flex-direction: column;
         align-items: center;
         max-width: 100%;
@@ -125,7 +164,7 @@ a:hover {
 
     .HarmainImg {
         width: 100%; /* Set the width of the image */
-        object-fit: cover; /* Cover the container while maintaining aspect ratio */
+        object-fit: cover; /* Cover the cardContainer while maintaining aspect ratio */
         margin: 15% 0 125px 40%;
         object-position: 15% 0; /* Adjust object position as needed */
         transform: scale(2); /* Zoom the image by 1.5 times */

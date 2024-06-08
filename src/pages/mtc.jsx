@@ -8,11 +8,18 @@ function Mtc() {
 
     return (
         <div>
-            <h2>Our Mission</h2>
-                <p>We are people</p>
-                
+            {/* <h2>Our Mission</h2>
+                <div className= "bento-box">
+                    <div class="big-box">fgsfg
+                        <div>content</div>
+                    </div>
+                    <div class="smallBoxes">
+                    <div class="smallbox">rtwert</div>
+                    <div class="smallbox1">rtwert</div>
+                    </div>
+                </div> */}
             <h2>Board of Directors</h2>
-            <div className="container">
+            <div className="cardContainer">
                 <div className="card">
                     <img src={harmain} alt="sample card img" className="HarmainImg" />
                     <div className="card-content">
