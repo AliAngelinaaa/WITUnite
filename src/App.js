@@ -4,6 +4,8 @@ import Home from "./pages/home";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Mtc from "./pages/mtc";
+import Services from "./pages/services";
+import ContactUs from "./pages/contactus";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/mtc' element={<Mtc />} />
+        {/* <Route path='/services' element={<Services />} /> */}
+        <Route path='/contactus' element={<ContactUs />} />
       </Routes>
       <Footer/>
     </Router>
