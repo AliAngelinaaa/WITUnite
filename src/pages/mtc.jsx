@@ -55,7 +55,7 @@ function Mtc() {
 
             <br />
 
-            <h2>WITU Ambassadors</h2>
+            {/* <h2>WITU Ambassadors</h2> */}
 
         </div>
     )
