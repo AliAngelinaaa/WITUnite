@@ -18,23 +18,20 @@ section{
     width: 40%;
   }
   .whoweare .right img{
-    height: 400px;
-    width: 400px;
+    width: 125%;
     object-fit: cover;
     border-radius: 12px;
   }
   .whoweare-details .left{
     width: 55%;
   }
-  section  .topic{
-    color: #0E2431;
+  section .topic{
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 10px;
   }
   .whoweare-details .left p{
     text-align: justify;
-    color: #0E2431;
   }
 
 /* I am section */
@@ -116,32 +113,35 @@ section{
 }
  
 .goal {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  background-color: white;
+  /* Remove extra padding or borders */
+  border-radius: 0;  /* Set to 0 to ensure no rounding */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Minimal shadow to keep the clean look */
+  margin-bottom: 20px;  /* Space between goals */
+  padding: 15px; /* Adding padding for content inside */
+  width: 100%; /* Make the goal take up the full width of its container */
 }
 
 .goal .rounded-box {
   background-color: #ffffff;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  width: 80%; /* Adjust the width as needed */
-  margin: auto; /* Center the box horizontally */
-  height: 700px;
+  padding: 5%;  /* Remove padding from inside the box */
+  border-radius: 0;  /* Set to 0 for no rounding if you want a clean square look */
+  box-shadow: none;  /* Remove additional shadow */
+  width: 100%;  /* Adjust width to take full space available */
+  margin: 0;  /* Center the box */
 }
 
 .goal .Goal-title {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  margin-bottom: 10px;  /* Add space below the title */
 }
 
 .goal p {
   font-size: 16px;
-  color: #666;
+  line-height: 1.6;  /* Improve text readability */
+  margin-top: 0;  /* Remove top margin to reduce gaps */
+
 }
   
 .features-list li{
@@ -163,12 +163,10 @@ section{
   text-align: center;
 }
 .features-list h3 {
-  color: #333;
   font-size: 15px;
 }
 
 .features-list p {
-  color: #666;
   font-size: 15px;
   line-height: 1.6;
 }
