@@ -1,17 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.png';
 import '../css/navbar.css';
 
-
 function Navigation() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(localStorage.getItem('mode') === 'dark-mode');
   const [searchActive, setSearchActive] = useState(false);
   const [sidebarActive, setSidebarActive] = useState(false);
 
+  // Effect for handling dark mode class on body
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+  }, [darkMode]);
+
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
-    localStorage.setItem('mode', darkMode ? 'light-mode' : 'dark-mode');
+    localStorage.setItem('mode', !darkMode ? 'dark-mode' : 'light-mode');
   };
 
   const toggleSearch = () => {
@@ -23,16 +31,20 @@ function Navigation() {
   };
 
   return (
-    <nav>
+    <nav className={`${sidebarActive ? 'active' : ''}`}>
       <div className="nav-bar">
+        {/* Sidebar toggle icon */}
         <i className={`bx bx-menu ${sidebarActive ? 'sidebarOpen' : ''}`} onClick={toggleSidebar}></i>
+        
+        {/* Logo */}
         <span className="logo navLogo">
           <Link to="/">
-            <img className="logo" src={logo} alt="WIT Unite logo. it is a < with a red heart and > followed by Women in Tech" />
+            <img className="logo" src={logo} alt="WIT Unite logo" />
           </Link>
         </span>
 
-        <div className="menu">
+        {/* Sidebar menu */}
+        <div className={`menu ${sidebarActive ? 'active' : ''}`}>
           <div className="logo-toggle">
             <span className="logo">
               <Link to="/">WIT Unite</Link>
@@ -42,13 +54,12 @@ function Navigation() {
 
           <ul className="nav-links">
             <li><Link to="/">Home</Link></li>
-            {/* <li><Link to="/students">Students</Link></li>
-            <li><Link to="/services">Services</Link></li> */}
             <li><Link to="/mtc">Meet Our Community</Link></li>
             <li><Link to="/contactus">Contact Us</Link></li>
           </ul>
         </div>
 
+        {/* Dark mode and search */}
         <div className="darkLight-searchBox">
           <div className="dark-light" onClick={toggleDarkMode}>
             <i className={`bx ${darkMode ? 'bx-moon' : 'bx-sun'}`}></i>

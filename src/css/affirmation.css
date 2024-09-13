@@ -1,10 +1,7 @@
 div .affirmation {
     position: relative;
     padding: 10%;
-  /*  text-align: center; */
-   /* background-color: #F3D0D2 */
    background-image: url('../images/banner6.png');  
-  /*background-image: url('../images/bg.jpg'); */
   background-repeat: no-repeat; 
   background-size: cover;
 

@@ -15,26 +15,30 @@
 }
 
 /* ===== Colours ===== */
+/* Default (light mode) colors */
 :root {
-    --body-color: #FFF;
-    --nav-color: #F3D0D2;
-    --side-nav: #010718;
-    --text-color: black;
+    --body-color: #FFF; /* white */
+    --nav-color: #F3D0D2; /* light pink */
+    --side-nav: #F3D0D2;
+    --text-color: #0E2431;
     --search-bar: #F2F2F2;
     --search-text: #010718;
 }
 
+/* Dark mode colors */
+body.dark {
+    --body-color: #18191A; /* dark grey */
+    --nav-color: #8B0000;  /* dark red */
+    --side-nav: #2C2C2C;
+    --text-color: white;
+    --search-bar: #2C2C2C;
+    --search-text: #FFF; /* white for search text in dark mode */
+}
+
+
 body {
     height: 100vh;
     background-color: var(--body-color);
-}
-
-body.dark {
-    --body-color: #18191A;
-    --nav-color: #242526;
-    --side-nav: #242526;
-    --text-color: #CCC;
-    --search-bar: #242526;
 }
 
 nav {
