@@ -23,42 +23,28 @@ function Services() {
     const services = [
         {
           id: 1,
-          title: "Service 1",
+          title: "Project Sprint",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           image: "",
         },
         {
           id: 2,
-          title: "Service 2",
+          title: "Daily Leetcode",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           image: "",
         },
         {
           id: 3,
-          title: "Service 3",
+          title: "Walk-in Thursdays",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           image: "",
         },
         {
             id: 4,
-            title: "Service 4",
-            description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            image: "",
-        },
-        {
-            id: 5,
-            title: "Service 5",
-            description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            image: "",
-        },
-        {
-            id: 6,
-            title: "Service 6",
+            title: "Portfolio Workshop",
             description:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             image: "",

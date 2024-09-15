@@ -5,21 +5,21 @@ function Service({ id, title, description, image}) {
   const services = [
     {
       id: 1,
-      title: "Service 1",
+      title: "Project Sprint",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       image: "",
     },
     {
       id: 2,
-      title: "Service 2",
+      title: "Portfolio Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       image: "",
     },
     {
       id: 3,
-      title: "Service 3",
+      title: "Daily LeetCode",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       image: "",

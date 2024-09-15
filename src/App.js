@@ -4,7 +4,7 @@ import Home from "./pages/home";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Mtc from "./pages/mtc";
-// import Services from "./pages/services";
+import Services from "./pages/services";
 import ContactUs from "./pages/contactus";
 
 function App() {

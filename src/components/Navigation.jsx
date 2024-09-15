@@ -54,6 +54,7 @@ function Navigation() {
 
           <ul className="nav-links">
             <li><Link to="/">Home</Link></li>
+            <li><Link to="/services">Services</Link></li>
             <li><Link to="/mtc">Meet Our Community</Link></li>
             <li><Link to="/contactus">Contact Us</Link></li>
           </ul>
