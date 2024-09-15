@@ -29,6 +29,7 @@ function Service({ id, title, description, image}) {
   return (
     <div className="service">
       <img 
+          className='img'
           src={image} 
           width='140px'
           height='140px'

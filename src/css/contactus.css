@@ -106,6 +106,39 @@ h1{
 .social{
     margin-right: 32px;
 }
-  
+
+@media (max-width: 600px) {
+  .symbol{
+    width: 20px;
+    height: auto;
+    display: flex;
+    object-fit: contain;
+  }
+  .social{
+    width: 40px;
+    height: auto;
+    display: flex;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contactimg {
+    display: none;
+  }
+  .contact-form{
+    width: 90%;
+  }
+  .input-container {
+    width: 100%
+  }
+}
+
+@media (max-width: 1130px) {
+  .contactimg {
+    transform: scale(0.7);
+    margin-right: 20px;
+  }
+}
 
   

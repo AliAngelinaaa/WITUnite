@@ -21,7 +21,7 @@
 }
 
 @media (max-width: 600px) {
-  img, .circleBlock, .card div a, .card div p, .card div h3, .card .HarmainImg {
+  .img{
       width: 50%;
       height: auto;
       display: flex;
