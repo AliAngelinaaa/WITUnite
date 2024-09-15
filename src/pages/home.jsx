@@ -18,7 +18,7 @@ function Home() {
                                     in their academic journey and the ever-changing tech industry.</p>
                             </div>
                             <a href="https://discord.gg/PjwYfs48AX" target="_blank" rel="noopener noreferrer">
-                                <button class="speech-bubble">Join Our Discord Community</button>
+                                <button class="speech-bubble">Join Our Discord</button>
                             </a>
                         </div>
                         <div class="right">

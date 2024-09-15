@@ -88,17 +88,6 @@ div .Goal-title {
   padding: 50px;
 }
 
-.speech-bubble {
-  top: 50%;
-  left: 50%;
-  transform: translate(50%, 20%);
-  margin-top: 20px;
-  background-color: #ffd1d1;
-  padding: 30px;
-  border-radius: 20px;
-  border-color: #F3D0D2;
-}
-
 .topic {
   text-align: justify;
 }

@@ -110,24 +110,16 @@ a:hover {
 .board-heading{
     font-size: 250%;
 }
-
-.ambassadors-section {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-  }
   
-  .section-title {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 40px;
-  }
-  
-  .ambassadors-container {
+.ambassadors-container {
+    max-width: 700px; /* Limits the container's width */
+    margin: 0 auto; /* Centers the container */
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: row; /* Stack cards vertically */
+    align-items: center; /* Center cards horizontally */
+    flex-wrap: nowrap; /* No wrapping needed */
   }
+  
   
   .ambassador-card {
     background-color: white;

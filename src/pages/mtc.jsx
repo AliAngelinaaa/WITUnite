@@ -34,7 +34,7 @@ function Mtc() {
                     <img src={nafisa} alt="picture of nafisa" />
                     <div className="card-content">
                         <h2>Nafisa Anzum</h2>
-                        <h3>Co-Founder</h3>
+                        <h3>Co-Founder/Head of Product</h3>
                         <p>Class of 2024 <br /> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                         <a href="https://www.linkedin.com/in/nafisa-anzum-aa8526216/">Linkedin</a>
 
@@ -44,7 +44,7 @@ function Mtc() {
                     <img src={sabina} alt="sample card img" />
                     <div className="card-content">
                         <h2>Sabina Ismailova</h2>
-                        <h3></h3>
+                        <h3>Head of Tech</h3>
                         <p>Class of 2024 <br /> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                         <a href="https://www.linkedin.com/in/nafisa-anzum-aa8526216/">Linkedin</a>
 
@@ -59,19 +59,18 @@ function Mtc() {
             <div class="ambassadors-container">
                 <div class="ambassador-card">
                     {/* <img src="ambassador1.jpg" alt="Ambassador 1" class="ambassador-photo"> */}
-                        <h3 class="ambassador-name">Jane Doe</h3>
+                        <h3 class="ambassador-name">Jennifer Perez</h3>
                         <p class="ambassador-title">Community Leader</p>
-                        <p class="ambassador-bio">Jane is passionate about technology and community building. She has been leading the Women in Tech initiative for 5 years.</p>
+                        <p class="ambassador-bio">Jennifer is a current sophomore studying computer science at Brooklyn College. She has previously served as the marketing intern at Varon Consulting and as an engineering intern at Teladoc Health. As a WITU ambassador, she looks forward to providing help and support in your career journey as well as the latest internships and events to attend. What she lacks in technical skill, she makes up with her know-how of career-related events beneficial for students to attend and expand their knowledge. Come and join Jennifer as you both embark your career journey</p>
                 </div>
-
+{/* 
                 <div class="ambassador-card">
-                    {/* <img src="ambassador2.jpg" alt="Ambassador 2" class="ambassador-photo"> */}
+                    <img src="ambassador2.jpg" alt="Ambassador 2" class="ambassador-photo">
                         <h3 class="ambassador-name">John Smith</h3>
                         <p class="ambassador-title">Technical Mentor</p>
                         <p class="ambassador-bio">John loves mentoring young engineers and has been helping developers achieve their goals for over a decade.</p>
-                </div>
+                </div> */}
 
-                {/* <!-- Add more ambassador cards as needed --> */}
             </div>
 
         </div>
