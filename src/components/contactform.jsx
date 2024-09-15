@@ -46,17 +46,17 @@ function ContactForm() {
     <form onSubmit={onSubmit} className="contact-form">
       <h1 className='title' style={{marginBottom:16}}>Contact Us</h1>
       <div className='input-container'>
-        <img src={name} style={{marginRight:8}}></img>
+        <img className='symbol' src={name} style={{marginRight:8}}></img>
         <input type="text" name="name"/><br/>
       </div>
       <label>Your Name</label>
       <div className='input-container'>
-        <img src={email} style={{marginRight:8}}></img>
+        <img className='symbol' src={email} style={{marginRight:8}}></img>
         <input type="email" name="email"/><br/>
       </div>
       <label>Your E-mail</label>
       <div className='input-container'>
-        <img src={message} style={{marginRight:8, textAlign:'start'}}></img>
+        <img className='symbol' src={message} style={{marginRight:8, textAlign:'start'}}></img>
         <textarea name="message"></textarea><br/>
       </div>
       <label style={{marginBottom:56}}>Message</label>
