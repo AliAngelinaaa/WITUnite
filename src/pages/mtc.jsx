@@ -26,7 +26,7 @@ function Mtc() {
                     <div className="card-content">
                         <h2>Harmain Munir</h2>
                         <h3>Co-Founder</h3>
-                        <p>Class of 2025 <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p>Class of 2025 <br />Harmain is a Computer Science undergraduate at CUNY Brooklyn College, a software engineering fellow at CUNY Tech Prep, and a former intern at HealthyCUNY. She has also served as a Computer Science teaching assistant at Girls Who Code and participated in the AT&T Technology Academy. As the Co-Founder of WITUnite, her mission is to build a tech community that empowers young women to pursue their dream careers in tech, providing support, mentorship, and resources to help them excel. </p>
                         <a href="https://www.linkedin.com/in/harmain-munir-335511243/">LinkedIn</a>
                     </div>
                 </div>
@@ -56,6 +56,7 @@ function Mtc() {
             <br />
 
             {/* <h2>WITU Ambassadors</h2> */}
+            
 
         </div>
     )

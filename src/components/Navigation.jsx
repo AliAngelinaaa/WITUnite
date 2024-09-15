@@ -47,16 +47,16 @@ function Navigation() {
         <div className={`menu ${sidebarActive ? 'active' : ''}`}>
           <div className="logo-toggle">
             <span className="logo">
-              <Link to="/">WIT Unite</Link>
+              <Link to="/"><img className="logo" src={logo} alt="WIT Unite logo" /></Link>
             </span>
             <i className="bx bx-x siderbarClose" onClick={toggleSidebar}></i>
           </div>
 
           <ul className="nav-links">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/mtc">Meet Our Community</Link></li>
-            <li><Link to="/contactus">Contact Us</Link></li>
+            <li><Link to="/" onClick={toggleSidebar}>Home</Link></li>
+            <li><Link to="/services" onClick={toggleSidebar}>Services</Link></li>
+            <li><Link to="/mtc" onClick={toggleSidebar}>Meet Our Community</Link></li>
+            <li><Link to="/contactus" onClick={toggleSidebar}>Contact Us</Link></li>
           </ul>
         </div>
 
