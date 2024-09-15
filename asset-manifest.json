@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/witunite/static/css/main.9bdd4df0.css",
-    "main.js": "/witunite/static/js/main.42f64b27.js",
+    "main.css": "/witunite/static/css/main.9b7216b1.css",
+    "main.js": "/witunite/static/js/main.b45ccb10.js",
     "static/js/453.d2e69b26.chunk.js": "/witunite/static/js/453.d2e69b26.chunk.js",
     "static/media/boxicons.svg": "/witunite/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
     "static/media/banner6.png": "/witunite/static/media/banner6.eb3bb6b58310bde9d0cc.png",
@@ -21,12 +21,12 @@
     "static/media/form_message_icon.svg": "/witunite/static/media/form_message_icon.978ab459d37760b228871b863c843fd1.svg",
     "static/media/form_name_icon.svg": "/witunite/static/media/form_name_icon.b2bfc19f1a7ccdc1f81f4d0e4677be7f.svg",
     "index.html": "/witunite/index.html",
-    "main.9bdd4df0.css.map": "/witunite/static/css/main.9bdd4df0.css.map",
-    "main.42f64b27.js.map": "/witunite/static/js/main.42f64b27.js.map",
+    "main.9b7216b1.css.map": "/witunite/static/css/main.9b7216b1.css.map",
+    "main.b45ccb10.js.map": "/witunite/static/js/main.b45ccb10.js.map",
     "453.d2e69b26.chunk.js.map": "/witunite/static/js/453.d2e69b26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bdd4df0.css",
-    "static/js/main.42f64b27.js"
+    "static/css/main.9b7216b1.css",
+    "static/js/main.b45ccb10.js"
   ]
 }
