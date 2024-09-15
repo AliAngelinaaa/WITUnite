@@ -40,7 +40,7 @@ function Home() {
             <section className="goal">
                 <div class="rounded-box">
                     <div class="Goal-title">
-                        <h1>Welcome to Women In Tech Unite</h1>
+                        <h2>Welcome to Women In Tech Unite</h2>
                     </div>
                     <p class="intro-text">At Women In Tech Unite, we prioritize community and connection. Our goal is to help you build meaningful relationships with friends, mentors, and peers who share your interests and aspirations. Together, we create a supportive environment that addresses the diverse needs of female students in the tech industry.</p>
                     <ul class="features-list">
