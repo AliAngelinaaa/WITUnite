@@ -55,8 +55,24 @@ function Mtc() {
 
             <br />
 
-            {/* <h2>WITU Ambassadors</h2> */}
-            
+            <h2>WITU Ambassadors</h2>
+            <div class="ambassadors-container">
+                <div class="ambassador-card">
+                    {/* <img src="ambassador1.jpg" alt="Ambassador 1" class="ambassador-photo"> */}
+                        <h3 class="ambassador-name">Jane Doe</h3>
+                        <p class="ambassador-title">Community Leader</p>
+                        <p class="ambassador-bio">Jane is passionate about technology and community building. She has been leading the Women in Tech initiative for 5 years.</p>
+                </div>
+
+                <div class="ambassador-card">
+                    {/* <img src="ambassador2.jpg" alt="Ambassador 2" class="ambassador-photo"> */}
+                        <h3 class="ambassador-name">John Smith</h3>
+                        <p class="ambassador-title">Technical Mentor</p>
+                        <p class="ambassador-bio">John loves mentoring young engineers and has been helping developers achieve their goals for over a decade.</p>
+                </div>
+
+                {/* <!-- Add more ambassador cards as needed --> */}
+            </div>
 
         </div>
     )

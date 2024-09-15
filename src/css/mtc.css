@@ -111,6 +111,65 @@ a:hover {
     font-size: 250%;
 }
 
+.ambassadors-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .ambassadors-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .ambassador-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .ambassador-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .ambassador-photo {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .ambassador-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .ambassador-title {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .ambassador-bio {
+    font-size: 14px;
+    color: #555;
+  }
+  
+
 
 @media (max-width: 600px) {
     .cardContainer {
@@ -172,5 +231,19 @@ a:hover {
         transform: scale(2); /* Zoom the image by 1.5 times */
         /* padding-bottom: 20%; Add padding on the right side */
     }
+
+    .ambassadors-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .ambassador-card {
+        width: 90%;
+      }
+      .ambassador-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      }
+      
 
 }
