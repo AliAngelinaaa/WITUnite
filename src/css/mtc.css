@@ -1,48 +1,18 @@
-/* Our Mission*/
+/* Our Mission */
 @keyframes zoomOut {
     0% {
-      transform: scale(2);
+        transform: scale(2);
     }
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
-
-.bento-box{
-    /* max-width: 90%; */
-    display: flex;
-    height: 400px;
-    border: 2px solid red;
-}
-.big-box {
-    width: 50%;
-    background-color: blue;
-    animation: zoomOut 1s cubic-bezier(1, 0.01, 0, 0.99); 
-
 }
 
-/* .big-box div{
-    animation: zoomOut 1s cubic-bezier(1, 0.01, 0, 0.99); 
-} */
-
-.smallBoxes{
-    border: 2px solid green;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+/* Our Board of Directors Section */
+.heading{
+    font-size:250%;
+    text-align: center;
 }
-
-.smallbox{
-    border: 2px solid red;
-    flex-basis: 66%;
-}
-.smallbox1{
-    flex: 1;
-}
-  
-
-/* Our Board of Directors Section*/
-
 .cardContainer {
     display: flex;
     flex-direction: row;
@@ -77,7 +47,6 @@
     align-items: center;
 }
 
-
 .circleBlock {
     background-color: blue;
     border-radius: 50%;
@@ -85,8 +54,8 @@
     height: 100px;
 }
 
-div h2,
-div a {
+.card-content h2,
+.card-content a {
     text-align: center;
 }
 
@@ -99,6 +68,7 @@ a:hover {
     color: purple;
 }
 
+/* Harmain's Image */
 .HarmainImg {
     transform: scale(1.5);
     width: 300px;
@@ -107,69 +77,70 @@ a:hover {
     padding-right: 50px;
 }
 
-.board-heading{
-    font-size: 250%;
-}
-  
+/* Ambassadors Section */
 .ambassadors-container {
-    max-width: 700px; /* Limits the container's width */
-    margin: 0 auto; /* Centers the container */
+    max-width: 1000px; /* Expand the max width for more cards */
+    margin: 0 auto;
     display: flex;
-    flex-direction: row; /* Stack cards vertically */
-    align-items: center; /* Center cards horizontally */
-    flex-wrap: nowrap; /* No wrapping needed */
-  }
-  
-  
-  .ambassador-card {
+    flex-wrap: wrap; /* Allow wrapping when more cards are added */
+    justify-content: center; /* Center the cards horizontally */
+}
+
+.ambassador-card {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 300px;
-    margin: 10px;
+    margin: 20px; /* More space between cards */
     text-align: center;
     transition: transform 0.3s;
-  }
-  
-  .ambassador-card:hover {
+    overflow: hidden; /* Ensures text doesn't overflow the card */
+}
+
+.ambassador-card:hover {
     transform: translateY(-10px);
-  }
-  
-  .ambassador-photo {
+}
+
+.ambassador-photo {
     border-radius: 50%;
     width: 120px;
     height: 120px;
     object-fit: cover;
     margin-bottom: 20px;
-  }
-  
-  .ambassador-name {
+}
+
+.ambassador-name {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  .ambassador-title {
+}
+
+.ambassador-title {
     font-size: 16px;
     color: #777;
     margin-bottom: 10px;
-  }
-  
-  .ambassador-bio {
+}
+
+.ambassador-bio {
     font-size: 14px;
     color: #555;
-  }
-  
+    height: 50px; /* Limit height */
+    overflow: hidden; /* Hide extra text */
+    transition: height 0.3s ease;
+}
 
+.ambassador-card:hover .ambassador-bio {
+    height: auto; /* Expand bio on hover */
+}
 
+/* Responsive Design */
 @media (max-width: 600px) {
     .cardContainer {
         flex-direction: column;
         align-items: center;
         max-width: 100%;
         justify-content: center;
-        align-items: center;
         padding: 5%;
     }
 
@@ -180,16 +151,13 @@ a:hover {
         transition: height 0.5s ease-in-out;
     }
 
-    img,
+    .card img,
     .circleBlock,
-    .card div a,
-    .card div p,
-    .card div h3, .card .HarmainImg {
+    .card-content a,
+    .card-content p,
+    .card-content h3,
+    .card-content .HarmainImg {
         display: none;
-    }
-
-    div h2 {
-        font-size: 200%;
     }
 
     .card:hover {
@@ -197,45 +165,43 @@ a:hover {
     }
 
     .card:hover img,
-    .card:hover div a,
-    .card:hover div p,
-    .card:hover div h3, .card:hover .HarmainImg {
+    .card:hover .card-content a,
+    .card:hover .card-content p,
+    .card:hover .card-content h3,
+    .card:hover .card-content .HarmainImg {
         display: block;
-    }
-
-    img {
-        width: 100%;
     }
 
     .card-content {
         padding: 5%;
     }
 
-    div a {
+    .card-content a {
         padding-top: 15%;
     }
 
     .HarmainImg {
-        width: 100%; /* Set the width of the image */
-        object-fit: cover; /* Cover the cardContainer while maintaining aspect ratio */
+        width: 100%;
+        object-fit: cover;
         margin: 15% 0 125px 40%;
-        object-position: 15% 0; /* Adjust object position as needed */
-        transform: scale(2); /* Zoom the image by 1.5 times */
-        /* padding-bottom: 20%; Add padding on the right side */
+        object-position: 15% 0;
+        transform: scale(2);
     }
 
     .ambassadors-container {
         flex-direction: column;
         align-items: center;
-      }
-    
-      .ambassador-card {
+        /* Adjust spacing for mobile */
+        padding: 0 10px;
+    }
+
+    .ambassador-card {
         width: 90%;
-      }
-      .ambassador-card:hover {
+        margin: 10px 0; /* Reduce margin on mobile */
+    }
+
+    .ambassador-card:hover {
         transform: scale(1.05);
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-      }
-      
-
+    }
 }
