@@ -59,6 +59,10 @@
     text-align: center;
 }
 
+.card-content p {
+    font-size: 0.8rem;
+}
+
 a {
     color: rgb(248, 102, 127);
     text-decoration: none;
@@ -75,6 +79,11 @@ a:hover {
     object-fit: cover;
     object-position: -5% 0;
     padding-right: 50px;
+}
+
+.card-img {
+    width: 300px;
+    object-fit: cover;
 }
 
 /* Ambassadors Section */
