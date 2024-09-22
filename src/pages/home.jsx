@@ -59,7 +59,14 @@ function Home() {
                     </ul>
                 </div>
             </section>
-
+            <section className="showcase">
+                <div className="showcase-container">
+                    <h2 className="iam-title">Showcase</h2>
+                    <div className="showcase-content">
+                        
+                    </div>
+                </div>
+            </section>
 
             {/* <section>Meet Members</section> */}
         </div>

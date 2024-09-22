@@ -27,9 +27,9 @@ function ContactUs() {
           <h2>Frequently Asked Questions</h2>
           {faqs.map((faq, index) => (
             <div className="faq-item" key={index}>
-              <button className="faq-question" onClick={() => toggleAnswer(index)}>
+              <div className="faq-question" onClick={() => toggleAnswer(index)}>
                 {faq.question}
-              </button>
+              </div>
               <div className="faq-answer" style={{ display: activeIndex === index ? 'block' : 'none' }}>
                 <p dangerouslySetInnerHTML={{ __html: faq.answer }} />
               </div>

@@ -28,3 +28,55 @@
   }
 }
 
+.services-description {
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.services-intro {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.services-list {
+  list-style-type: disc;
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
+
+.services-list li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.services-list li strong {
+  color: #e11d48;
+}
+
+.services-outro {
+  font-size: 16px;
+  font-weight: 500;
+  border-top: 1px solid #ddd;
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .services-description {
+    padding: 16px;
+  }
+
+  .services-intro {
+    font-size: 16px;
+  }
+
+  .services-list {
+    padding-left: 20px;
+  }
+
+  .services-outro {
+    font-size: 14px;
+  }
+}
+

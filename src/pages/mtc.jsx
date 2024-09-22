@@ -8,6 +8,20 @@ import '../css/mtc.css';
 function Mtc() {
     return (
         <div>
+            <section className="mtc-section">
+                <div className="intro-container">
+                    <h2 className="heading">Meet the Team</h2>
+                    <p className="intro-paragraph">We're a small but dedicated team with big dreams. Our mission is to reach out to all CUNY campuses and empower women in tech. Through mentorship, resources, and community support, we're committed to helping every aspiring woman in technology achieve her goals.</p>
+                </div>
+            </section>
+
+            <section className="mtc-section">
+                <div className="intro-container">
+                    <h2 className="heading">Our History</h2>
+                    <p>Women in Tech Unite (WITU) was founded in November 2023 by 2 Brooklyn College students who recognized the need for a supportive community for women in technology. Since our inception, we've grown from a small group of friends to a thriving network spanning multiple CUNY campuses. As of September 2024, we have 177 members and 3 board members.</p>
+                </div>
+            </section>
+
             <h2 className="heading">Board of Directors</h2>
             <div className="cardContainer">
                 <div className="card">
@@ -24,7 +38,7 @@ function Mtc() {
                     <div className="card-content">
                         <h2>Nafisa Anzum</h2>
                         <h3>Co-Founder</h3>
-                        <p>Class of 2024 <br />Nafisa Anzum is a Computer Science graduate from Brooklyn College, having completed her degree in just three years. She is currently a Service Recovery Analyst at HealthFirst and a co-founder of WIT Unite, a community initiative dedicated to supporting CUNY students in tech. Nafisa's experience includes internships with The New York Times, Teladoc Health, Wikitongues, and Blackstone, where she developed full-stack applications and improved engineering processes. Through WIT Unite, Nafisa aims to empower and inspire young women in tech by providing valuable resources, mentorship, and a supportive network to help them succeed in their careers.</p>
+                        <p>Class of 2024 <br />Nafisa Anzum is a Computer Science graduate from Brooklyn College, having completed her degree in just three years. She is currently a Service Recovery Analyst at HealthFirst and a co-founder of WIT Unite, a community initiative dedicated to supporting CUNY students in tech. Through WIT Unite, Nafisa aims to empower and inspire young women in tech by providing valuable resources, mentorship, and a supportive network to help them succeed in their careers.</p>
                         <a href="https://www.linkedin.com/in/nafisa-anzum-aa8526216/">LinkedIn</a>
                     </div>
                 </div>
@@ -33,13 +47,11 @@ function Mtc() {
                     <div className="card-content">
                         <h2>Sabina Ismailova</h2>
                         <h3>Head of Tech</h3>
-                        <p>Class of 2024 <br />Sabina is a software engineer apprentice at The New York Times, where she continues to develop her technical expertise. Graduating early from Brooklyn College, she has accumulated valuable experience through internships at organizations like Shared_Studios and Wikitongues. Her journey includes participating in Google's GSWEP via Project Basta, where she honed her problem-solving and technical interview skills. As the Head of Technology at WIT Unite, she helps create and maintain the technology for a supportive community for CUNY women in computer science.</p>
+                        <p>Class of 2024 <br />Sabina is a software engineer apprentice at The New York Times, where she continues to develop her technical expertise. Graduating early from Brooklyn College, she has accumulated valuable experience through internships at organizations like Shared_Studios and Wikitongues. As the Head of Technology at WIT Unite, she helps create and maintain the technology for a supportive community for CUNY women in computer science.</p>
                         <a href="https://www.linkedin.com/in/sabina-ismailova/">LinkedIn</a>
                     </div>
                 </div>
             </div>
-
-            <br />
 
             <h2 className="heading">WITU Ambassadors</h2>
             <div className="ambassadors-container">

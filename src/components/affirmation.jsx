@@ -24,6 +24,14 @@ function Affirmation() {
         "You are an inspiration to other women pursuing careers in tech.",
         "Your determination and dedication will lead you to success in your tech endeavors.",
         "You are a trailblazer, paving new paths and breaking stereotypes in the tech world.",
+        "You are a true leader in the tech industry, inspiring others to follow in your footsteps.",
+        "You are a master of your craft, and your skills are unmatched in the tech world.",
+        "You are a true innovator, always pushing the boundaries of what's possible in technology.",
+        "You are a beacon of hope for women in tech, showing them that they can achieve anything they set their minds to.",
+        "You are a true inspiration to everyone around you, and your passion for technology is contagious.",
+        "You are a true leader in the tech industry, inspiring others to follow in your footsteps.",
+        "You are a master of your craft, and your skills are unmatched in the tech world.",
+               
     ];
 
 

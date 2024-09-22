@@ -55,61 +55,102 @@ h1{
     margin-right: 32px;
 }
 
+/* FAQ Section Container */
 .faq-section {
   padding: 20px;
 }
 
+/* Centered FAQ Container */
 .faq-container {
   max-width: 800px;
   margin: 0 auto;
 }
 
+/* FAQ Heading */
 .faq-container h2 {
   text-align: center;
   font-size: 24px;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
+/* FAQ Item Styling */
 .faq-item {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
 }
 
+/* FAQ Question Styling */
 .faq-question {
-  margin-top: 25px;
   width: 100%;
-  text-align: left;
   font-size: 18px;
+  font-weight: 500;
   cursor: pointer;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
   position: relative;
 }
 
+/* Plus Sign Styling */
 .faq-question::after {
   content: '+';
   position: absolute;
   right: 15px;
   top: 50%;
   transform: translateY(-50%);
+  font-size: 24px;
+  color: #333;
   transition: transform 0.3s ease;
 }
 
+/* FAQ Answer Hidden by Default */
 .faq-answer {
   display: none;
   padding: 15px;
-  background-color: #fff;
+  background-color: #fefefe;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
+/* FAQ Answer Text */
 .faq-answer p {
   margin: 0;
+  font-size: 16px;
+  color: #555;
 }
 
+/* Active FAQ Question */
+.faq-question.active {
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-color: #ccc;
+}
+
+/* Rotate Plus Sign for Active Question */
 .faq-question.active::after {
   transform: translateY(-50%) rotate(45deg);
 }
 
+/* Display Answer When Question is Active */
 .faq-question.active + .faq-answer {
   display: block;
+}
+
+/* FAQ Question Hover Effect */
+.faq-question:hover {
+  background-color: #f5f5f5;
+  border-color: #ccc;
+}
+
+/* Ensure Global Button Hover Styles Don't Apply Here */
+.faq-question:hover {
+  background-color: transparent;
+  border: none;
 }
 
 

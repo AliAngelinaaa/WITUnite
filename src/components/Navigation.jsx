@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.png';
 import '../css/navbar.css';
@@ -7,7 +7,6 @@ function Navigation() {
   const [darkMode, setDarkMode] = useState(localStorage.getItem('mode') === 'dark-mode');
   const [searchActive, setSearchActive] = useState(false);
   const [sidebarActive, setSidebarActive] = useState(false);
-  const sidebarRef = useRef(null);
 
   // Effect for handling dark mode class on body
   useEffect(() => {
@@ -17,20 +16,6 @@ function Navigation() {
       document.body.classList.remove('dark');
     }
   }, [darkMode]);
-
-  // Effect to handle clicks outside the sidebar
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (sidebarActive && sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-        setSidebarActive(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [sidebarActive]);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -59,7 +44,7 @@ function Navigation() {
         </span>
 
         {/* Sidebar menu */}
-        <div ref={sidebarRef} className={`menu ${sidebarActive ? 'active' : ''}`}>
+        <div className={`menu ${sidebarActive ? 'active' : ''}`}>
           <div className="logo-toggle">
             <span className="logo">
               <Link to="/"><img className="logo" src={logo} alt="WIT Unite logo" /></Link>
