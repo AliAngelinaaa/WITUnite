@@ -35,6 +35,17 @@ function Mtc() {
   ];
   return (
     <div>
+      <section className="intro-container">
+        <h2 className="heading">Meet the Team</h2>
+        <p className="intro-paragraph">We're a small but dedicated team with big dreams. Our mission is to reach out to all CUNY campuses and empower women in tech. Through mentorship, resources, and community support, we're committed to helping every aspiring woman in technology achieve her goals.</p>
+
+      </section>
+
+      {/* New section for WITU history */}
+      <section className="intro-container">
+        <h2 className="heading">Our History</h2>
+        <p>Women in Tech Unite (WITU) was founded in 2023 by a group of passionate CUNY students who recognized the need for a supportive community for women in technology. Since our inception, we've grown from a small group of friends to a thriving network spanning multiple CUNY campuses.</p>
+      </section>
       <h2 className="heading">Board of Directors</h2>
       <div className="cardContainer">
         {members.map((member, index) => (
