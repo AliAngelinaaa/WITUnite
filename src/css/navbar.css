@@ -296,4 +296,14 @@ nav .nav-bar .logo a {
         display: block;
         margin-top: 20px;
     }
+
+    .bx-menu {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bx-menu {
+      display: none;
+    }
 }
