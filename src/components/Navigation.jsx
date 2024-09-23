@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../images/logo.png';
 import '../css/navbar.css';
 
+
 function Navigation() {
   const [darkMode, setDarkMode] = useState(localStorage.getItem('mode') === 'dark-mode');
   const [searchActive, setSearchActive] = useState(false);

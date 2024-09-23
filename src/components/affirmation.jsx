@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../css/affirmation.css';
+import banner from '../images/banner6.png';
 
 function Affirmation() {
     // Define an array of affirmations
@@ -49,11 +49,11 @@ function Affirmation() {
     }, []);
 
     return (
-        <div className="affirmation">
-        <div className="affirmation-text">
+        <div className="relative p-[10%] bg-cover bg-no-repeat" style={{ backgroundImage: `url(${banner})` }}>
+        <div className="relative z-10 -top-15 text-right text-black text-2xl font-bold" style={{ textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)' }}>
         <div className="background-image"></div>
             <h2>Daily Affirmation</h2>
-            <p>{affirmations[currentAffirmationIndex]}</p>
+            <p >{affirmations[currentAffirmationIndex]}</p>
         </div>
         </div>
 

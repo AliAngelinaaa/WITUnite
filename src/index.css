@@ -13,7 +13,7 @@ code {
     monospace;
 }
 
-button{
+/* button{
   align-items: center;
   background-color: #fff0f0;
   border: 2px solid #fff0f0;
@@ -63,4 +63,39 @@ button:active {
 
 button:hover {
   outline: 0;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .custom-button {
+    @apply flex items-center justify-center bg-custom-pink-light border-2 border-custom-pink-light rounded-lg box-border text-custom-pink cursor-pointer text-2xl font-bold h-12 max-w-full px-6 relative text-center no-underline select-none touch-manipulation;
+  }
+
+  .custom-button::after {
+    @apply bg-custom-pink-dark rounded-lg absolute;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    top: -2px;
+    transform: translate(-8px, 8px);
+    transition: transform 0.2s ease-out;
+    z-index: -1;
+  }
+
+  .custom-button:hover::after {
+    transform: translate(0, 0);
+  }
+
+  .custom-button:active {
+    @apply bg-custom-pink-active outline-none;
+  }
+
+  .custom-button:hover {
+    @apply outline-none;
+  }
 }
