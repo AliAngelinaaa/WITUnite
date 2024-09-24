@@ -2,23 +2,6 @@ import React from "react";
 import Service from "../components/service";
 import "../css/services.css";
 
-//     let services = [
-//         { id: 1, title: 'Service', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', image: ''},
-//         { id: 2, title: 'Service', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', image: ''},
-//         { id: 3, title: 'Service', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', image: ''},
-//     ];
-//   return (
-//     <div>
-//         <div style={{marginTop: '24px', fontSize: '32px', textAlign: 'center'}}>Our Services</div>
-//         {/* <Service /> */}
-//         <div className='services'>
-//             {services.map((item) => (
-//                 <Service service={item}/>
-//             ))}
-//         </div>
-//     </div>
-//   )
-
 function Services() {
   const services = [
     {
@@ -55,7 +38,7 @@ function Services() {
     <section>
       <div className="services-container">
         <div style={{ marginTop: '24px', fontSize: '32px', textAlign: 'center' }}>Our Services</div>
-        <div className="services-description">
+        <div className="services-description ">
           <p className="services-intro">WITU offers a variety of services to help women in tech succeed, including:</p>
           <ul className="services-list">
             <li><strong>Mentorship Programs:</strong> Personalized guidance from experienced professionals to help navigate career challenges and growth.</li>
@@ -69,7 +52,7 @@ function Services() {
           </p>
         </div>
 
-        <div className="services">
+        <div className="flex flex-wrap h-fit justify-around items-center mx-[10%]">
           {services.map((service) => (
             <Service
               key={service.id}

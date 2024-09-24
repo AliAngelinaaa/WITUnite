@@ -27,7 +27,7 @@ function Service({ id, title, description, image}) {
   ];
 
   return (
-    <div className="service">
+    <div className="flex flex-col justify-center items-center m-5 p-5 text-center w-[300px] min-w-[300px]">
       <img 
           className='img'
           src={image} 
