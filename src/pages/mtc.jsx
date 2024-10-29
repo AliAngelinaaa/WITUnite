@@ -3,7 +3,6 @@ import harmain from "../images/harmain.jpg";
 import nafisa from "../images/nafisa.jpg";
 import sabina from "../images/sabina.jpg";
 import jennifer from "../images/jennifer.png";
-import "../css/mtc.css";
 import MtcCard from "../components/MtcCard";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
