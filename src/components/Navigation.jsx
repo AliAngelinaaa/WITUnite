@@ -1,27 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.png';
 import '../css/navbar.css';
 
 
 function Navigation() {
-  const [darkMode, setDarkMode] = useState(localStorage.getItem('mode') === 'dark-mode');
   const [searchActive, setSearchActive] = useState(false);
   const [sidebarActive, setSidebarActive] = useState(false);
+  const menuRef = useRef(null);
 
-  // Effect for handling dark mode class on body
   useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add('dark');
-    } else {
-      document.body.classList.remove('dark');
-    }
-  }, [darkMode]);
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target) && 
+          !event.target.classList.contains('bx-menu')) {
+        setSidebarActive(false);
+      }
+    };
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    localStorage.setItem('mode', !darkMode ? 'dark-mode' : 'light-mode');
-  };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const toggleSearch = () => {
     setSearchActive(!searchActive);
@@ -45,7 +43,7 @@ function Navigation() {
         </span>
 
         {/* Sidebar menu */}
-        <div className={`menu ${sidebarActive ? 'active' : ''}`}>
+        <div className={`menu ${sidebarActive ? 'active' : ''}`} ref={menuRef}>
           <div className="logo-toggle">
             <span className="logo">
               <Link to="/"><img className="logo" src={logo} alt="WIT Unite logo" /></Link>
@@ -61,12 +59,8 @@ function Navigation() {
           </ul>
         </div>
 
-        {/* Dark mode and search */}
+        {/* Dark mode and search - modified to only show search */}
         <div className="darkLight-searchBox">
-          <div className="dark-light" onClick={toggleDarkMode}>
-            <i className={`bx ${darkMode ? 'bx-moon' : 'bx-sun'}`}></i>
-          </div>
-
           <div className="searchBox">
             <div className={`searchToggle ${searchActive ? 'active' : ''}`} onClick={toggleSearch}>
               <i className={`bx ${searchActive ? 'bx-x cancel' : 'bx-search search'}`}></i>
