@@ -20,7 +20,12 @@ function ContactUs() {
     <>
       <div style={{ display: "flex" }}>
         <ContactForm />
-        <img className='contactimg' src={wit} alt="WIT Unite" style={{ width: '100%', height: 'auto' }} />
+        <img 
+          className='contactimg' 
+          src={wit} 
+          alt="WIT Unite" 
+          style={{ width: '100%', height: 'auto', maxWidth: '600px' }} 
+        />
       </div>
       <section className="faq-section p-5">
         <div className="faq-container max-w-3xl mx-auto">

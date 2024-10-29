@@ -2,16 +2,24 @@ import React from "react";
 
 function MtcCard({ member }) {
   return (
-    <div className="group w-24 h-[340px] overflow-hidden object-cover rounded-[40px] transition-all duration-500 ease-in-out flex justify-center shadow-md shadow-pink-100 hover:w-[70%] hover:mt-2.5">
+    <div className="group md:w-24 w-full md:h-[340px] h-auto overflow-hidden object-cover md:rounded-[40px] rounded-lg transition-all duration-500 ease-in-out flex md:flex-row flex-col justify-center shadow-md shadow-pink-100 md:hover:w-[70%] md:hover:mt-2.5 p-4 md:p-0">
       {member.name === "Harmain Munir" ? (
-        <img src={member.img} alt={member.name} className="w-[225px] object-cover object-[20%_center] scale-150 mr-8" />
+        <img 
+          src={member.img} 
+          alt={member.name} 
+          className="md:w-[225px] w-48 h-48 md:h-auto object-cover object-[20%_center] md:scale-150 md:mr-8 mx-auto rounded-full md:rounded-none" 
+        />
       ) : (
-        <img src={member.img} alt={member.name} className="w-[300px] object-cover"/>
+        <img 
+          src={member.img} 
+          alt={member.name} 
+          className="md:w-[300px] w-48 h-48 md:h-auto object-cover mx-auto rounded-full md:rounded-none"
+        />
       )}
-      <div className="hidden p-[1%] items-center group-hover:flex flex-col ml-4">
+      <div className="md:hidden md:p-[1%] md:items-center md:group-hover:flex md:flex-col md:ml-4 flex flex-col items-center mt-4">
         <h2 className="text-center">{member.name}</h2>
         <h3 className="text-center">{member.role}</h3>
-        <p className="text-xs">
+        <p className="text-xs text-center md:text-left">
           Class of {member.classOf} <br />
           {member.bio}
         </p>
